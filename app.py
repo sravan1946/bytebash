@@ -11,3 +11,15 @@ def login():
     username = request.form["username"]
     password = request.form["password"]
     return jsonify({"username": username, "password": password})
+
+@app.route("/register", methods=["POST", "GET"])
+def register():
+    if request.method != "POST":
+        return render_template("register.html", msg="Please register")
+    username = request.form["username"]
+    password = request.form["password"]
+    return jsonify({"username": username, "password": password})
+
+@app.route("/", methods=["GET"])
+def index():
+    return render_template("index.html")
