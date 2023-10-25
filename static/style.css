@@ -19,7 +19,7 @@
 .uname {
     font-size: medium;
     color: #000000;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn {
@@ -38,7 +38,7 @@
 .textbox {
     background-color: #ffffffa1;
     color: #000000;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
     border-radius: 50px;
     border: none;
@@ -52,5 +52,5 @@
     padding-bottom: 2%;
     font-size: medium;
     color: #000000;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
