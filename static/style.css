@@ -57,3 +57,17 @@
 .register-body{
     background-image:linear-gradient(to right top,#C6EA8D,#FE90AF);
 }
+.huhu{
+    height:600px;
+    width:1470px;
+}
+#fero{
+    padding-left:10%;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo{
+    height:50px;
+    width:50x;
+    border-radius:50px;
+}
