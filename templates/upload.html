@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Upload </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div align="center">
+            <div align="center" class="border">
+                <div class="textbox">
+                    <form action="{{ url_for('upload') }}" method="post">
+                        <input class="textbox" id="title" name="title" type="text" placeholder="Enter Title" >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
