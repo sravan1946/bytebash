@@ -50,7 +50,6 @@ def upload():
         return render_template("login.html", msg="Please login")
     with open("./data/uploads.json", "r") as upload:
         uploads = json.loads(upload.read())
-    # store each recipe as a dictionary with unique id
     recipe = {
         "title": request.form["title"],
         "ingredients": request.form["ingredients"],
