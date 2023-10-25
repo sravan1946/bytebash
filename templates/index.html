@@ -7,9 +7,10 @@
     </head>
     <body>
         <div>
-            <p style="display:inline-block;">
-            <img src="static/the sauce.png"alt="logo" class="logo">
+            <p>
+            <img src="{{ url_for('static',filename='logo.png') }}" alt="logo" class="logo">
             <h1 id="fero">Thesaus</h1>
+            <input type="submit" class="butt" value="sign in">
             </p>
         </div>
         <div class="poopy">
