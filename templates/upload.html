@@ -7,13 +7,20 @@
     </head>
     <body>
         <div align="center">
-            <div align="center" class="border">
-                <div class="textbox">
-                    <form action="{{ url_for('upload') }}" method="post">
-                        <input class="textbox" id="title" name="title" type="text" placeholder="Enter Title" >
-                    </form>
-                </div>
-            </div>
-        </div>
+       <form action="{{ url_for('upload') }}" method="post">
+            <label>Enter your food name:<input class="title-textbox" id="title" name="title" placeholder="title" type="text" required></label><br>
+            <label>Enter your Instructions<textarea class="instruction-textbox" id="instruction" name="instruction" placeholder="Instruction" minlength="100" rows="10" cols="50" required></textarea></label><br>
+           
+                <select class="select">
+                 <option value="0">Select Meal</option>
+                 <option value="1">Breakfast</option>
+                 <option value="2">Lunch</option>
+                 <option value="3">Snack</option>
+                 <option value="4">Dinner</option>
+                </select><br>
+                <input type="file" class="select">
+           </div>
+       </form>
+    </div>
     </body>
 </html>
