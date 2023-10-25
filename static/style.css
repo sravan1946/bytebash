@@ -84,5 +84,17 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     padding-bottom:1%;
     padding-left:1.5%;
     padding-right:1.5%;
-    margin-left:50px;
+    text-align:top-Sright;
+}
+.log{
+    background-color:#f4f2f2 ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    border-radius: 50px;  
+    color:#361c1c;
+    padding-top: 1%;
+    padding-bottom:1%;
+    padding-left:1.6%;
+    padding-right:1.6%;
+    text-align:top-Sright;
 }
