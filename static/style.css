@@ -54,3 +54,6 @@
     color: #000000;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.register-body{
+    background-image:linear-gradient(to right top,#C6EA8D,#FE90AF);
+}
