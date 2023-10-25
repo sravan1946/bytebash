@@ -69,4 +69,6 @@ def upload():
 
 @app.route("/", methods=["GET"])
 def index():
-    return render_template("index.html", user = session.get("user", "Anonymous"))
+    if session.get("logged_in", False):
+        return render_template("index.html")
+    return render_template("login.html", msg="Please login")
