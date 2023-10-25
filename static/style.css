@@ -1,0 +1,16 @@
+.login-body{
+  background-color: rgb(238,174,202);
+  background:radial-gradient(circle,rgba(238,174,202,1)0%,rgba(148,187,233,1)100%);
+}
+
+.border{
+    background-color:rgb(255, 151, 203);
+    margin-top:0%;
+    margin-bottom:0%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius: 50px;
+}
