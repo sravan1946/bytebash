@@ -3,7 +3,8 @@
     "ingredients": "request.form['ingredients']",
     "instructions": "request.form['instructions']",
     "author": "session['user']",
-    "tags": "request.form['tags']",
+    "course": "request.form['image']",
+    "veg": "True",
     "image": "request.form['image']",
     "likes": 0,
     "dislikes": 0
