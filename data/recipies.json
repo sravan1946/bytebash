@@ -1,11 +1,1 @@
-{ "1": {
-    "title": "request.form['title']",
-    "ingredients": "request.form['ingredients']",
-    "instructions": "request.form['instructions']",
-    "author": "session['user']",
-    "course": "request.form['image']",
-    "veg": "True",
-    "image": "request.form['image']",
-    "likes": 0,
-    "dislikes": 0
-}}
+{"0": {"title": "sdff", "ingredients": "wed", "instructions": "instructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructions", "author": "sravan", "likes": 0, "dislikes": 0}, "1": {"title": "qwd`", "ingredients": "sdf", "instructions": "instructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructionsinstructions", "author": "sravan", "likes": 0, "dislikes": 0}}
