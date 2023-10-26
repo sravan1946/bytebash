@@ -53,9 +53,14 @@ def upload():
     with open("./data/recipies.json", "r") as upload:
         uploads = json.loads(upload.read())
         print(request.form)
+    ingredients = {
+        request.form.get(f"ingredients{i}"): request.form.get(f"quantity{i}")
+        for i in range(1, 21)
+        if request.form.get(f"ingredients{i}")
+    }
     recipe = {
         "title": request.form["title"],
-        "ingredients": request.form["ingredients1"],
+        "ingredients": ingredients,
         "instructions": request.form["instructions"],
         "author": session["user"],
         "likes": 0,
