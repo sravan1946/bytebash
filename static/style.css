@@ -104,7 +104,7 @@ margin-top:5px;
     padding-left: 1%;
 }
 .instruction-textbox {
-    background-color: #c45a04;
+    background-color: #0ae678;
     color: #000000;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
@@ -129,4 +129,25 @@ margin-top:5px;
     position:absolute;
     top: 8px;
     right:120px;
+}
+.upload-body{
+    background-image: "C:\Users\ANJANA A M\Downloads\istockphoto-1351302570-612x612.jpg";
+}
+
+.brkfst{
+height:150px;
+width:200px
+}
+
+.bf{
+    font-family: fantasy;
+    
+}
+#sona{
+    text-align: center;
+    width:200px;
+    display: block;
+    margin: left 13px;;
+   position: relative;
+     
 }
