@@ -92,8 +92,18 @@ margin-top:5px;
 }
 
 
-.title-textbox, .instruction-textbox {
-    background-color: #ffffffa1;
+.title-textbox {
+    background-color: #0ae678;
+    color: #000000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    border-width: 1px;
+    padding-left: 1%;
+}
+.instruction-textbox {
+    background-color: #0ae678;
     color: #000000;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
@@ -118,5 +128,7 @@ margin-top:5px;
     position:absolute;
     top: 8px;
     right:120px;
-
+}
+.upload-body{
+    background-image: 
 }
