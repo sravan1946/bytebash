@@ -62,7 +62,10 @@ def upload():
     with open("./data/recipies.json", "w") as upload:
         upload.write(json.dumps(uploads))
     return render_template("index.html", msg="Upload successful")
-    
+
+@app.route("/breakfast", methods=["GET"])
+def breakfast():
+    return render_template("breakfast.html")
 
 
 @app.route("/", methods=["GET"])
