@@ -5,23 +5,22 @@
         <title> Upload </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
-    <body>
-        <div align="center">
-       <form action="{{ url_for('upload') }}" method="post">
-            <label>Enter your food name:<input class="title-textbox" id="title" name="title" placeholder="title" type="text" required></label><br>
-            <label>Enter your Instructions<textarea class="instruction-textbox" id="instructions" name="instructions" placeholder="instructions" minlength="100" rows="10" cols="50" required></textarea></label><br>
-           
-                <select class="select">
-                 <option value="0">Select Meal</option>
-                 <option value="1">Breakfast</option>
-                 <option value="2">Lunch</option>
-                 <option value="3">Snack</option>
-                 <option value="4">Dinner</option>
-                </select><br>
-                <input type="file" class="select">
-                <!-- add a text input and a button to add more input fields-->
+    <body class="upload-body">
+        <div>
+        <form action="{{ url_for('upload') }}" method="post">
+            <label>Enter your food name:<input class="title-textbox" id="title" name="title" placeholder="title" type="text" required></label><br><br><br>
+            <label>Enter your Instructions:<br><textarea class="instruction-textbox" id="instruction" name="instruction" placeholder="Instruction" minlength="100" rows="10" cols="50" required></textarea></label><br><br><br>
+            <label>Meal type:
+                <select class="selected">
+                <option value="0" >Select Meal</option>
+                <option value="1">Breakfast</option>
+                <option value="2">Lunch</option>
+                <option value="3">Snack</option>
+                <option value="4">Dinner</option>
+                </select></label><br><br><br>
+                <input type="file" class="file-name"><br>
                 <div id="dynamicInput">
-                    <input type="text" name="ingredients[]">
+                <input type="text" name="ingredients[]">
                 </div>
                 <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
                 <script type="text/javascript">
@@ -42,8 +41,9 @@
 
                 <br>
                 <input type="submit" value="Upload" class="upload-button">
-           </div>
-       </form>
+
+        </div>
+    </form>
     </div>
     </body>
 </html>
