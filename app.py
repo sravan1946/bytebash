@@ -66,6 +66,15 @@ def upload():
 @app.route("/breakfast", methods=["GET"])
 def breakfast():
     return render_template("breakfast.html")
+@app.route("/lunch", methods=["GET"])
+def lunch():
+    return render_template("lunch.html")
+@app.route("/snack", methods=["GET"])
+def snack():
+    return render_template("snack.html")
+@app.route("/dinner", methods=["GET"])
+def dinner():
+    return render_template("dinner.html")
 
 
 @app.route("/", methods=["GET"])
