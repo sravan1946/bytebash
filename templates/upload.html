@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <title> Upload </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <style>
+            .upload-body{
+                background-image: url( "{{url_for('static', filename='bg.jpg')}}" );
+            }
+        </style>
     </head>
     <body class="upload-body">
         <div>
@@ -18,7 +23,7 @@
                 <option value="3">Snack</option>
                 <option value="4">Dinner</option>
                 </select></label><br><br><br>
-                <input type="file" class="file-name"><br><br><br>
+                <input type="url" class="file-name" name="image"><br>
                 <img src="{{ url_for('static',filename='bg.jpg') }}">
                 <div id="dynamicInput">
                     <input type="text" name="ingredients[]">
