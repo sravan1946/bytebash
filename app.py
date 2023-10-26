@@ -1,4 +1,4 @@
-from flask import Flask, request, session, render_template
+from flask import Flask, jsonify, request, session, render_template
 import json
 import secrets
 
@@ -48,20 +48,18 @@ def upload():
         return render_template("upload.html", msg="Please upload")
     if not session.get("logged_in", False):
         return render_template("login.html", msg="Please login")
-    with open("./data/uploads.json", "r") as upload:
+    with open("./data/recipies.json", "r") as upload:
         uploads = json.loads(upload.read())
     recipe = {
         "title": request.form["title"],
-        "ingredients": request.form["ingredients"],
+        "ingredients": request.form["ingredients[]"],
         "instructions": request.form["instructions"],
         "author": session["user"],
-        "tags": request.form["tags"],
-        "image": request.form["image"],
         "likes": 0,
         "dislikes": 0
     }
     uploads.update({len(uploads): recipe})
-    with open("./data/uploads.json", "w") as upload:
+    with open("./data/recipies.json", "w") as upload:
         upload.write(json.dumps(uploads))
     return render_template("index.html", msg="Upload successful")
 

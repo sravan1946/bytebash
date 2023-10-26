@@ -19,6 +19,30 @@
                 <option value="4">Dinner</option>
                 </select></label><br><br><br>
                 <input type="file" class="file-name"><br><br><br>
+                <img src="{{ url_for('static',filename='bg.jpg') }}">
+                <div id="dynamicInput">
+                    <input type="text" name="ingredients[]">
+                    </div>
+                    <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+                    <script type="text/javascript">
+                        var counter = 1;
+                        var limit = 20;
+                        function addInput(divName){
+                            if (counter == limit)  {
+                                alert("You have reached the limit of adding " + counter + " inputs");
+                            }
+                            else {
+                                var newdiv = document.createElement('div');
+                                newdiv.innerHTML = "Entry " + (counter + 1) + " <br><input type='text' name='ingredients[]'>";
+                                document.getElementById(divName).appendChild(newdiv);
+                                counter++;
+                            }
+                        }
+                    </script>
+    
+                    <br>
+                    <input type="submit" value="Upload" class="upload-button">
+    
         </div>
     </form>
     </div>
