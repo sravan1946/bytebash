@@ -145,8 +145,7 @@ width:200px
     width:200px;
     display: block;
     margin: left 13px;;
-   position: relative;
-     
+    position: relative;
 }
 
 .lch{
@@ -157,5 +156,6 @@ width:200px
 }
 .ucha{
     font-family:fantasy;
-    margin: left 50px;;
+    margin: left 50px;
 }
+

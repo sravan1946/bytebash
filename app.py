@@ -45,7 +45,7 @@ def logout():
 @app.route("/upload", methods=["POST", "GET"])
 def upload():
     if request.method != "POST":
-        return render_template("upload.html", msg="Please upload")
+        return render_template("upload.html")
     if not session.get("logged_in", False):
         return render_template("login.html", msg="Please login")
     if request.form.get("mealt","0") == "0":
