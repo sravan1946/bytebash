@@ -14,7 +14,7 @@
         <div>
         <form action="{{ url_for('upload') }}" method="post">
             <label>Enter your food name:<input class="title-textbox" id="title" name="title" placeholder="title" type="text" required></label><br><br><br>
-            <label>Enter your Instructions:<br><textarea class="instruction-textbox" id="instruction" name="instruction" placeholder="Instruction" minlength="100" rows="10" cols="50" required></textarea></label><br><br><br>
+            <label>Enter your Instructions:<br><textarea class="instruction-textbox" id="instructions" name="instructions" placeholder="Instruction" minlength="100" rows="10" cols="50" required></textarea></label><br><br><br>
             <label>Meal type:
                 <select class="selected">
                 <option value="0" >Select Meal</option>
@@ -24,7 +24,6 @@
                 <option value="4">Dinner</option>
                 </select></label><br><br><br>
                 <input type="url" class="file-name" name="image"><br>
-                <img src="{{ url_for('static',filename='bg.jpg') }}">
                 <div id="dynamicInput">
                     <input type="text" name="ingredients[]">
                     </div>
@@ -38,15 +37,13 @@
                             }
                             else {
                                 var newdiv = document.createElement('div');
-                                newdiv.innerHTML = "Entry " + (counter + 1) + " <br><input type='text' name='ingredients[]'>";
+                                newdiv.innerHTML = "Entry " + (counter + 1) + " <br><input type='text' name='ingredients"+(counter+1)+'">";
                                 document.getElementById(divName).appendChild(newdiv);
                                 counter++;
                             }
                         }
                     </script>
-    
-                    <br>
-                    <input type="submit" value="Upload" class="upload-button">
+                        <input type="submit" value="Upload" class="upload-button">
     
         </div>
     </form>
