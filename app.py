@@ -50,6 +50,7 @@ def upload():
         return render_template("login.html", msg="Please login")
     with open("./data/recipies.json", "r") as upload:
         uploads = json.loads(upload.read())
+        print(request.form)
     recipe = {
         "title": request.form["title"],
         "ingredients": request.form["ingredients[]"],
@@ -58,7 +59,7 @@ def upload():
         "likes": 0,
         "dislikes": 0
     }
-    uploads.update({len(uploads): recipe})
+    uploads.update({len(uploads)+1: recipe})
     with open("./data/recipies.json", "w") as upload:
         upload.write(json.dumps(uploads))
     return render_template("index.html", msg="Upload successful")
