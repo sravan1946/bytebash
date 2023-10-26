@@ -48,12 +48,14 @@ def upload():
         return render_template("upload.html", msg="Please upload")
     if not session.get("logged_in", False):
         return render_template("login.html", msg="Please login")
+    if request.form.get("mealt","0") == "0":
+        return render_template("upload.html", msg="Please select a meal type")
     with open("./data/recipies.json", "r") as upload:
         uploads = json.loads(upload.read())
         print(request.form)
     recipe = {
         "title": request.form["title"],
-        "ingredients": request.form["ingredients[]"],
+        "ingredients": request.form["ingredients1"],
         "instructions": request.form["instructions"],
         "author": session["user"],
         "likes": 0,
