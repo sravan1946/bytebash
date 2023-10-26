@@ -11,8 +11,8 @@
             <p>
             <img src="{{ url_for('static',filename='logo.png') }}" alt="logo" class="logo">
             <h1 class="fero">thesauce</h1>
-            <input type="submit" class="butt" value="logout">
-            <input type="submit" class="log" value="upload">
+            <form action="{{ url_for('upload') }}" method="get"><input type="submit" class="butt" value="upload"></form>
+            <form action="{{ url_for('login') }}" method="get"><input type="submit" class="log" value="logout"></form>
             </p>
             </header>
         </div>
